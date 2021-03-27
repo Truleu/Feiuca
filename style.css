@@ -1,0 +1,38 @@
+  body {
+      background-image: url(./img/background.jpg);
+      padding: 0;
+      margin: 0;
+      background-size: cover;
+  }
+
+  h1 {
+      font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+      font-size: 100px;
+      color: rgb(0, 89, 255);
+      text-align: center;
+  }
+
+
+  .rodada {
+    animation: createBox 5s;
+
+  }
+  @keyframes createBox {
+    from {
+      transform: scale(0) rotate(365deg);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  .rodada {
+      display: block;
+      position: fixed;
+      width: auto;
+      height: auto;
+      top: 35%;
+      left: 30%;
+      transform: rotate(370deg) translateZ(0);
+  }
+
