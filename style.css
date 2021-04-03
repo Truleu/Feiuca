@@ -5,14 +5,6 @@
       background-size: cover;
   }
 
-  @media (max-width: 650px){
-    body {
-      padding: 0;
-      margin: 0;
-      background-size: contain;
-    }
-  }
-
   h1 {
       font-family: 'Comic Sans MS', 'Comic Sans', cursive;
       font-size: 100px;
@@ -26,8 +18,23 @@
     margin: auto;
     transform: rotate(0.03turn);
     animation: createBox 4s;
-
   }
+
+  @media (max-width: 650px){
+    body {
+      background-size: contain;
+    }
+    h1 {
+        font-size: 63px;
+    }
+    .rodada {
+        width: 70%;
+        height: 100%;
+        top: 40%;
+        left: 25%;
+    }
+}
+
   @keyframes createBox {
     from {
       transform: scale(0) rotate(365deg);
@@ -37,14 +44,3 @@
     }
   }
 
-@media (max-width: 650px){
-    .rodada {
-        width: 70%;
-        height: 100%;
-        top: 40%;
-        left: 25%;
-    }
-    h1 {
-        font-size: 63px;
-    }
-}
